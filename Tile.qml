@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtMultimedia 5.3
+import QtQuick 2.8
+import QtMultimedia 5.9
 
 import "main.js" as Scripts
 

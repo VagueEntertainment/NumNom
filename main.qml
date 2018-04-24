@@ -1,7 +1,7 @@
-import QtQuick 2.3
+import QtQuick 2.8
 import QtQuick.Window 2.0
 import QtQuick.Controls 1.2
-import QtMultimedia 5.3
+import QtMultimedia 5.9
 
 import "main.js" as Scripts
 

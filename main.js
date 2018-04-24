@@ -186,24 +186,24 @@ function mathequations() {
         }
 
         if(type == 5 ) {
-            console.log("Addition");
+          //  console.log("Addition");
              equals = Math.floor((Math.random() * maxvalue) + 2)
                 while(var1 + var2 != equals) {
                  //  equals = Math.floor((Math.random() * maxvalue) + 2)
                    var1 = Math.floor((Math.random() * maxvalue ) +1)
                    var2 = Math.floor((Math.random() * maxvalue ) + 1)
-                    console.log(var1+" + " +var2+" !=" + equals);
+                  //  console.log(var1+" + " +var2+" !=" + equals);
                 }
         }
 
         if(type == 6 ) {
-            console.log("subtraction");
+          //  console.log("subtraction");
              equals = Math.floor((Math.random() * maxvalue) + 1)
               while(var2 - var1 != equals) {
                   // equals = Math.floor((Math.random() * maxvalue) + 0)
                      var1 = Math.floor((Math.random() * maxvalue ) + 0)
                       var2 = Math.floor((Math.random() * maxvalue ) + 1)
-                        console.log(var2+" - " +var1+" !=" + equals);
+                     //   console.log(var2+" - " +var1+" !=" + equals);
                     }
                 }
 

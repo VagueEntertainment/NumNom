@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtMultimedia 5.6
+import QtQuick 2.8
+import QtMultimedia 5.9
 
 
     Item {
@@ -75,7 +75,7 @@ import QtMultimedia 5.6
 
         state:"Hide"
 
-        onStateChanged: if(window_container.state == "Show") {playIntro.play()
+        onStateChanged: if(window_container.state == "Show") {//playIntro.play()
                         if (currentenemy == "mechaheart") {theenemy = 0} else {theenemy = 1}
                         }
 
@@ -83,9 +83,9 @@ import QtMultimedia 5.6
             id:border
             source:if(attack == 1) {"graphics/enemy/"+currentenemy+"-a.png"} else if(cookies >= answersleft / 1.4 && cookies > taken) {"graphics/enemy/"+currentenemy+"-3.png"}
                             else if (cookies >= answersleft / 4 && cookies > taken) {"graphics/enemy/"+currentenemy+"-2.png"
-                                                                                        if(parent.state == "Show") {distress.play()}}
+                                                                                        if(parent.state == "Show") {/*distress.play()*/}}
                             else if (cookies >= answersleft / 8 && cookies > taken) {"graphics/enemy/"+currentenemy+"-1.png"
-                                                                                        if(parent.state == "Show") {distress.play()}}
+                                                                                        if(parent.state == "Show") {/*distress.play()*/}}
                                 else {"graphics/enemy/"+currentenemy+"-1.png"}
             anchors.fill:parent
             fillMode:Image.PreserveAspectFit
